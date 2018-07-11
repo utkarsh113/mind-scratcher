@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+<title>techciti3</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" media="all" href="style1.css">
+    </head>
+<body>
+<script>
+function validateform()
+{
+var us=document.form1.us.value;
+var pw=document.form1.pw.value;
+if(us==null||us=="")
+{
+alert("Username can not be empty");
+return false;
+us.focus;
+}
+else if(pw==""||pw==null)
+{
+alert("password can not be empty");
+return false;
+pw.focus;
+}
+else
+{
+alert("Login successful");
+return true;
+document.form1.submit();
+}
+}
+</script>
+<header>Data Duplication</header>
+<div id="container">
+<fieldset>
+<DIV id="war">
+    <h1>User Login</h1> 
+</DIV>
+<form name="form1" method="POST" onsubmit="return validateform()" action="emp.html" >
+    <pre>
+         <label>Username  </label>          <INPUT TYPE="TEXT" NAME="us" align="right"><BR />
+         <label>Password  </label>           <INPUT TYPE="PASSWORD" NAME="pw" align="right"><BR /><br />
+         <INPUT TYPE="SUBMIT" VALUE="Login" id="green1" >         <INPUT TYPE="RESET" VALUE="Reset" id="green2"><br />
+         <label>Want a new account?</label>   <a href="register.html">Register here</a>
+    </pre>
+    </form>
+</fieldset>
+</div>
+<footer>copyright &copy; techciti.in</footer>
+</body>
+</html>
